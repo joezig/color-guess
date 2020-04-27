@@ -1,0 +1,5 @@
+.ColorBox {
+    height: 30vh;
+    width: 30vh;
+    border: 2px solid red;
+}

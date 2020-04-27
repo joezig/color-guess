@@ -1,0 +1,8 @@
+.BoxList {
+    /* width: 90%; */
+    border: 1px solid gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}

@@ -13,12 +13,14 @@ class BoxList extends Component {
     componentDidMount() {
         // Generate array of Color Boxes for state.numSquares
         this.setState({
-            numSquares: new Array(9).fill(
-                <ColorBox 
-                    bg={{backgroundColor: this.bgRand()}} 
-                    click={this.handleClick} 
-                />
-            )
+            numSquares: new Array(9).fill()
+            // .fill(
+            //     <ColorBox 
+            //         bg={{backgroundColor: this.bgRand()}} 
+            //         key={this}
+            //         click={this.handleClick} 
+            //     />
+            // )
         })
     }
 
@@ -31,17 +33,21 @@ class BoxList extends Component {
     }
 
 handleClick = () => {
-    console.log()
+    console.log(this.props.backgroundColor)
 }
     render() {
-        
         return(
             <div className='BoxList'>
                 <div className='BoxList-header'>
                     <h2>Guess the Color</h2>
                 </div>
                 <div className='BoxList-color-boxes'>
-                    {this.state.numSquares}
+                    {this.state.numSquares.map(sq => (
+                        <ColorBox 
+                            bg={{backgroundColor: this.bgRand()}} 
+                            click={this.handleClick}
+                        />
+                    ))}
                 </div>
             </div>
         );

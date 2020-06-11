@@ -1,5 +1,6 @@
 import React from 'react';
 import BoxList from './components/BoxList/BoxList';
+import ColorBox from './components/ColorBox/ColorBox'
 import './App.css';
 
 function App() {

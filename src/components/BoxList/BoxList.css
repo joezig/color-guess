@@ -1,19 +1,19 @@
 .BoxList {
-    height: 100vh;
+    height: 80vh;
     /* width: 100%; */
     /* border: 1px solid gold; */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: space-between; */
-}
-
-.BoxList-color-boxes {
-    width: 90%;
-    margin: 0 auto;
-    /* background-color: red; */
-    /* border: 1px solid green; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: space-between;
 }
+
+/* .BoxList-color-boxes { */
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    /* background-color: red; */
+    /* border: 1px solid green; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+/* } */

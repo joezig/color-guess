@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+
 import './ColorBox.css';
 
 class ColorBox extends Component {
+
+    // handleClick() {
+    //     this.setState({ backgroundColor: this.changeBG()})
+    // }
+    
     render() {
         return(
-            <div onClick={this.props.click} className={`ColorBox`} style={this.props.bg} >
-            </div>
+            <div 
+                className='ColorBox' 
+                style={this.props.styles}
+            />
         );
     }
 }
